@@ -1,5 +1,6 @@
 package com.zhutao.service.impl;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.zhutao.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,12 @@ public class HelloServiceImpl implements HelloService {
      * @return
      */
     @Override
+    @HystrixCommand(fallbackMethod = "sayHelloError")
     public String sayHello(String name) {
         return restTemplate.getForObject("http://SERVICE-HI/test/hi?name="+name,String.class);
+    }
+
+    public String sayHelloError(String name){
+        return "Hi " + name + ", sorry error";
     }
 }
