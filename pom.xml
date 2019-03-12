@@ -12,7 +12,8 @@
         <module>eureka-server</module>
         <module>service-hi</module>
         <module>service-ribbon</module>
-        <module>serice-feign</module>
+        <module>service-feign</module>
+        <module>service-zuul</module>
     </modules>
 
     <name>learn-sprig-cloud</name>
@@ -30,7 +31,7 @@
         <springboot.starter.version>2.1.2.RELEASE</springboot.starter.version>
         <junit.version>4.11</junit.version>
         <configuration.processor.version>2.1.2.RELEASE</configuration.processor.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <spring-cloud.hystrix.dashboard.version>1.4.6.RELEASE</spring-cloud.hystrix.dashboard.version>
     </properties>
 
