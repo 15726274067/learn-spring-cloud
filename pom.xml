@@ -11,6 +11,7 @@
     <modules>
         <module>eureka-server</module>
         <module>service-hi</module>
+        <module>service-ribbon</module>
     </modules>
 
     <name>learn-sprig-cloud</name>
@@ -82,10 +83,10 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.commons</groupId>-->
+            <!--<artifactId>commons-lang3</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <!--配置插件来更改项目编译compile的jdk版本-->
