@@ -13,3 +13,7 @@ spring:
 #          username: zhutao@2766
 #          password: qwe123456
       label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
