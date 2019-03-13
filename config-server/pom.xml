@@ -8,13 +8,13 @@
         <version>2.0.6.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>service-zuul</artifactId>
+    <packaging>jar</packaging>
+    <artifactId>config-server</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
         <dependency>
