@@ -7,14 +7,14 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @Author: zhutao
- * @Date: 2019/3/12 18:06
+ * @Date: 2019/3/12 21:45
  * @Version 1.0
  */
 @SpringBootApplication
-@EnableEurekaClient
 @EnableZuulProxy
-public class ZuulApp {
+@EnableEurekaClient
+public class ZuulApplication {
     public static void main(String[] args){
-        SpringApplication.run(ZuulApp.class);
+        SpringApplication.run(ZuulApplication.class);
     }
 }

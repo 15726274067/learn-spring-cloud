@@ -18,19 +18,13 @@
 
     <name>learn-sprig-cloud</name>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.2.RELEASE</version>
-    </parent>
-
     <!--父工程版本号提取-->
     <properties>
-        <springboot.version>2.1.2.RELEASE</springboot.version>
-        <springboot.web.version>2.1.2.RELEASE</springboot.web.version>
-        <springboot.starter.version>2.1.2.RELEASE</springboot.starter.version>
+        <springboot.version>2.0.4.RELEASE</springboot.version>
+        <springboot.web.version>2.0.4.RELEASE</springboot.web.version>
+        <springboot.starter.version>2.0.4.RELEASE</springboot.starter.version>
         <junit.version>4.11</junit.version>
-        <configuration.processor.version>2.1.2.RELEASE</configuration.processor.version>
+        <configuration.processor.version>2.0.4.RELEASE</configuration.processor.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <spring-cloud.hystrix.dashboard.version>1.4.6.RELEASE</spring-cloud.hystrix.dashboard.version>
     </properties>
@@ -40,6 +34,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
 
@@ -95,6 +95,7 @@
             <!--<groupId>org.apache.commons</groupId>-->
             <!--<artifactId>commons-lang3</artifactId>-->
         <!--</dependency>-->
+
     </dependencies>
 
     <!--配置插件来更改项目编译compile的jdk版本-->
