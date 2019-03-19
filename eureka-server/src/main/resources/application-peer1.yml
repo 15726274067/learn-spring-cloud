@@ -1,5 +1,6 @@
 server:
-  port: 8761
+  port: 8771
+profiles: peer1
 eureka:
   instance:
     hostname: localhost
